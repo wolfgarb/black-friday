@@ -1,96 +1,67 @@
-# black-friday
+# E-Commerce Back-End
 
-# module-13-challenge-orm
+## Purpose
 
-> Challenge: Take this working Express API and have it use Sequelize to interact with a SQL database.
-## Create the database and the configuration to connect a database using Sequelize
+---
 
-- Use the `schema.sql` file in the `db` folder to create your database using MySQL shell commands.
+## Preview
 
-- Use environment variables to store sensitive data, like your MySQL username, password, and database name.
+Here is how the application appears and functions.
 
-## Create Database Models
+<img src='' />
 
-- `Category`
+The full walk-through video can be found on [YouTube]()
 
-  - `id`
-    - Integer
-    - Don't allow null values
-    - Set as primary key
-    - Use auto increment
-  - `category_name`
-    - String
-    - Don't allow null values
+## Installation
 
-- `Product`
+_This project requires Node.js and other dependencies_
 
-  - `id`
-    - Integer
-    - Don't allow null values
-    - Set as primary key
-    - Use auto increment
-  - `product_name`
-    - String
-    - Don't allow null values
-  - `price`
-    - Decimal
-    - Don't allow null values
-    - Validate that the value is a decimal
-  - `stock`
-    - Integer
-    - Don't allow null values
-    - Set a default value of 10
-    - Validate that the value is numeric
-  - `category_id`
-    - Integer
-    - Reference the `category` model's `id`
+- [How to install Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-- `Tag`
+- [MySQL docs](https://dev.mysql.com/doc/refman/8.0/en/)
 
-  - `id`
-    - Integer
-    - Don't allow null values
-    - Set as primary key
-    - Use auto increment
-  - `tag_name`
-    - String
+After you have installed Node, navigate to the directory you would like to use using the CLI and then clone this repository:
 
-- `ProductTag`
-  - `id`
-    - Integer
-    - Don't allow null values
-    - Set as primary key
-    - Use auto increment
-  - `product_id`
-    - Integer
-    - Reference the `product` model's `id`
-  - `tag_id`
-    - Integer
-    - Reference the `tag` model's `id`
+```bash
+git clone git@github.com:wolfgarb/black-friday.git
+```
 
-### Associations
+Open VS code and use these commands to get you started:
 
-> Execute association methods on our Sequelize models to create the following relationships between them.
-- `Product` belongs to `Category`, as a Category can have multiple Products but a Product can only belong to one Category
+```bash
+npm install mysql2 dotenv express sequelize
+npm init
+```
 
-- `Category` has many `Product`
+Make sure your `package.json` includes the seed in your scripts:
 
-- `Product` belongs to many `Tag`, using the `ProductTag` through model, allow Products to have multiple Tags and Tags have many Products
+```js
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
+}
+```
 
-- `Tag` belongs to many `Product`
+Start the application from the command line:
 
-> **HINT:** Make sure you set up foreign key relationships that match the column we created in the respective models!
-## Fill out API routes to perform RESTful CRUD operations
+```bash
+node server
+```
 
-- Fill out the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform Create, Read, Update, and Delete operations using your Sequelize models
+## Database Schema
 
-- The functionality for creating the many-to-many relationship for products is already done for you
+<img src='' />
 
-> **Hint:** Be sure to look at your module project's code for syntax help and use your model's column definitions to figure out what `req.body` will be for POST and PUT routes!
-## Seed Database
+## Tests
 
-After creating the models and routes, run `npm run seed` to seed data to your database so you can test your routes.
+_This project has no testing at this time_
 
-## Sync Sequelize to database on server start.
+## Feedback
 
-- Create the code needed in server.js to sync our Sequelize models to our SQL database on server start.
+Have something you'd like to add?<br>
+Feel free to contact me via email!<br>
+
+<a href="mailto:sraewolfskill@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+ </a>
