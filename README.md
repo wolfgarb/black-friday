@@ -84,9 +84,26 @@ Make sure `package.json` includes the seed in your scripts:
 }
 ```
 
-`npm run seed` will seed all the files so they can be tested in Insomnia.
+Login to MySQL with your credentials. 
+```bash
+mysql -u root -p
+```
+In the MySQL terminal, start the database
+```mysql
+USE ecommerce_db;
+```
+Then seed the schema files
+```mysql
+source ./db/schema.sql;
+```
 
-Start the application from the command line:
+Go back to your main terminal or VS Code powershell and enter 
+```bash
+npm run seed
+``` 
+This will seed all the files so they can be tested in Insomnia.
+
+Finally, start the application from the command line:
 
 ```bash
 node server
