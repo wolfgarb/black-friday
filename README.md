@@ -30,7 +30,7 @@ Here is how the application appears and functions in Insomnia
 
 This video will show you how to set up the project.
 
-- [Project Set-Up]()
+- [Project Set-Up](https://youtu.be/QH67snvhrUM)
 
 The following videos show the routes being tested in Insomnia.
 
