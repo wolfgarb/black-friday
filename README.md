@@ -11,7 +11,6 @@ SO THAT my company can compete with other e-commerce companies
 ## Table of Contents
 
 - [Preview](#Preview)
-- [Walkthrough Video]()
 - [Installation](#Installation)
 - [Database Schema](#Database-Schema)
 - [Tests](#Tests)
@@ -26,7 +25,11 @@ Here is how the application appears and functions in Insomnia
 
 <img src='images\insomnia-preview.gif' />
 
-The full walk-through video can be found on [YouTube]()
+---
+
+The full walk-through video can be found on YouTube.
+- [Part One](https://youtu.be/32ZebCXC6ng)
+- [Part Two](https://youtu.be/EtpS9fMYTZs)
 
 ## Installation
 

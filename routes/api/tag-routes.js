@@ -13,6 +13,10 @@ router.get('/', (req, res) => {
         // do all attributes need to be included?
         attributes: ['product_name'],
       },
+      // {
+      //   model: ProductTag,
+      //   attributes: ['product_id', 'tag_id'],
+      // },
     ],
   })
     .then((tagData) => res.json(tagData))
