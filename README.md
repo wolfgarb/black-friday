@@ -11,6 +11,7 @@ SO THAT my company can compete with other e-commerce companies
 ## Table of Contents
 
 - [Preview](#Preview)
+- [Walkthrough](#walkthrough)
 - [Installation](#Installation)
 - [Database Schema](#Database-Schema)
 - [Tests](#Tests)
@@ -25,9 +26,14 @@ Here is how the application appears and functions in Insomnia
 
 <img src='images\insomnia-preview.gif' />
 
----
+## Walkthrough
 
-The full walk-through video can be found on YouTube.
+This video will show you how to set up the project.
+
+- [Project Set-Up]()
+
+The following videos show the routes being tested in Insomnia.
+
 - [Part One](https://youtu.be/32ZebCXC6ng)
 - [Part Two](https://youtu.be/EtpS9fMYTZs)
 
@@ -52,7 +58,8 @@ node_modules
 package-lock.json
 ```
 
-`.env` will hold your sensitive information. 
+`.env` will hold your sensitive information.
+
 ```bash
 DB_NAME='ecommerce_db'
 DB_USER='root'
@@ -99,7 +106,7 @@ _This project used Insomnia for testing_
   <img src="https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE" />
 </a>
 
-## Documentation 
+## Documentation
 
 - [npm](https://docs.npmjs.com/)
 - [MySQL2](https://www.npmjs.com/package/mysql2)
