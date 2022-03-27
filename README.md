@@ -46,7 +46,7 @@ _This project requires Node.js and other dependencies_
 After you have installed Node, navigate to the directory you would like to use using the CLI and then clone this repository:
 
 ```bash
-git clone git@github.com:wolfgarb/black-friday.git
+git clone git@github.com:wolfskillobyte/black-friday.git
 ```
 
 Create `.gitignore` to include the following:
